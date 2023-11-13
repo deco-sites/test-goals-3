@@ -12,6 +12,7 @@ function App(props: AppProps) {
     <>
       {/* Include default fonts and css vars */}
       <Theme />
+      {/* {Deno.env} */}
 
       {/* Include Icons and manifest */}
       <GlobalTags />
