@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import { badRequest } from "deco/mod.ts";
 
 export interface Props {
@@ -7,15 +8,19 @@ export interface Props {
 }
 
 export type loaderObject = {
-    data: string;
-}
+  data: string;
+};
 
 /** @title Loader de erro */
-const loader = ({ showError }: Props, req : Request, _ctx: any): loaderObject => {
-  console.log ("AQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUII");
-  badRequest ({message: "Erro de teste"});
-  // throw new Error("Erro de teste");
+const loader = (
+  { showError }: Props,
+  req: Request,
+  _ctx: any,
+): loaderObject => {
+  console.log("AQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUIIAQUII");
+  badRequest({ message: "Erro de teste" });
+  // // throw new Error("Erro de teste");
   return { data: "OK" };
-}
+};
 
 export default loader;

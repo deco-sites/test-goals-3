@@ -6,11 +6,12 @@ import { type loaderObject } from "../../loaders/LoaderError.tsx";
 // export { loader };
 
 export interface Props {
-    thing: loaderObject;
+  thing: loaderObject;
 }
 
 export default function Benefits(
   props: Props,
 ) {
-  return (<div>Ola, tudo bem {props.thing}</div>)
+  // return (<div>OKAY</div>);
+  return <div>Ola, tudo bem {props.thing}</div>;
 }
